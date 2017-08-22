@@ -1,0 +1,110 @@
+$brand_base: #214289;
+$brand_second: #D61A62;
+$brand_yellow: #FFC61B;
+$deep_blue: #1B283F;
+$deep_grey: #4D4D4D;
+$form_border: #B9C1CA;
+$divider: rgba(227, 227, 227, 0.70);
+$none: rgba(255, 255, 255, 0);
+
+
+$white: #FFFFFF;
+$black: #000000;
+$green: #4caf50;
+$nblue: #36ABF9;
+$red:  rgba(231, 76, 60,1); 
+$brown: #884A4A;
+$grey: #777777;
+
+$border_color: #cdddff;
+$border_grey: #E2E2E2;
+$border_hover: #CCCCCC;
+$icon_grey: #D9D9D9;
+$grey_tint: #F6F6F6;
+$grey_tint_1: #FBFBFB;
+$blue_tint: #e6ebf5;
+$white: #FFFFFF;
+$gray_light: #F9F9F9;
+$gray_mid: #EEEEEE;
+$icon_review: rgba(138, 138, 138, 0.68);
+$black_trans3: rgba(0, 0, 0, 0.3);
+
+
+// Social color Code
+$facebook: #3b5998;
+$twitter: #1da1f2;
+$instagram: #833ab4;
+$uplabs: #AA2E85;
+$behance: #1769ff;
+
+
+// border radius
+$border_radius_rounded: 50px;
+$border_radius_circle: 50%;
+$border_radius_xs: 2px;
+$border_radius_s: 4px;
+$border_radius_m: 6px;
+$border_radius_l: 8px;
+$border_radius_xl: 8px;
+
+$base: 14px;
+$font_size_xs: $base * 0.7142857142857143;
+$font_size_s: $base * 0.8571428571428571;
+$font_size_m: $base * 1;
+$font_size_l: $base * 1.142857142857143;
+$font_size_xl: $base * 1.285714285714286;
+$font_size_xxl: $base * 1.428571428571429;
+
+$container_width: 1170px;
+
+$input_focus: #8c9dc0; //rgba(33, 66, 137, 0.50);
+
+$link: #1da1f2;
+$link_hover: #1769ff;
+
+// Button color
+$btn_brand: $brand_base;
+$btn_brand_hover: $deep_blue;
+
+$btn_brandSecond: #fd5797;
+$btn_brandSecond_hover: $brand_second;
+
+$btn_default: rgba(226, 226, 226, 0.5);
+$btn_default_hover: #E2E2E2;
+
+$btn_close: #ff6969;
+$btn_close_hover: #f02424;
+
+
+/* Border Outlines */
+$bottom_box: 1px solid rgba(0, 0, 0, 0.1);
+$border_box: 1px solid rgba(0, 0, 0, 0.1);
+$box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.02);
+$search_shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);
+$sub_border-bottom: 1px solid #efefef;
+$border: 1px solid #cdddff;
+
+//Task colors
+
+$Request_task: 2px solid rgba(52, 152, 219,1);
+$Process_task: 2px solid rgba(243, 156, 18,1);
+$Cancelled_task: 2px solid rgba(231, 76, 60,1);
+$Completed_task: 2px solid rgba(46, 204, 113,1);
+
+$request_task_btn: #3498db;
+$process_task_btn: rgba(243, 156, 18,1);
+$cancelled_task_btn: rgba(231, 76, 60,1);
+$completed_task_btn: rgba(46, 204, 113,1);
+$cover: rgba(255, 255, 255, 0.72);
+
+
+
+$gradient_background: linear-gradient(to bottom, rgba(214, 26, 98, 0), $brand_base);
+$gradient_black: linear-gradient(to bottom, rgba(214, 26, 98, 0), $black);
+$gradient_white: linear-gradient(to bottom, rgba(214, 26, 98, 0), $black);
+
+$header_under: linear-gradient(to right, $brand-base, #0389ff, #0dd3ff);
+// animation
+$anim: 250ms ease-in-out;
+
+

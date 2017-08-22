@@ -1,0 +1,252 @@
+.hide-menu{
+  .tf-landingHeader{
+    display: none;
+  }
+}
+.backBg-Change{
+  background-color: $white;
+}
+
+.tf-loginHeader{
+  .tf-header{
+    max-width: 1170px;
+    padding: 0 15px;
+  }
+}
+
+.tf-fullSize-container{
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+  @extend .border-box;
+}
+
+.tf-loginSlogam{
+  margin-top: 50px;
+  h1{
+    font-size: 50px;
+    font-weight: 300;
+    color: $deep_grey;
+    margin-bottom: 20px;
+    span{
+      color: $brand_base;
+      font-weight: 800;
+    }
+  }
+  h3{
+    font-size: 30px;
+    color: $deep_grey;
+    font-weight: 300;
+    margin-top: 20px;
+  }
+}
+
+.tf-loginSection-img{
+  text-align: center;
+  padding: 50px 0;
+  img {
+    width: 60%;   
+  }
+}
+
+.tf-loginMain-section{
+  height: -webkit-calc(100vh - 80px);
+  height: -moz-calc(100vh - 80px);
+  height: calc(100vh - 80px);
+  @extend .d-table;
+  .tf-loginMain-sectionInner{
+    @extend .d-tablecell;
+  }
+}
+.tf-entrySection-form{
+  width: 310px;
+  h6{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 500;
+    color: $brand_base;
+    margin-bottom: 15px;
+  }
+}
+
+.login-form{
+  .form-element{
+    display:block;
+    position:relative;
+    margin-top:30px;
+    .tf-entryIcon{
+      position: absolute;
+      font-size: 18px;
+      color: #999;
+    }
+  }
+  
+  .floated{
+    display:inline-block;
+    width:100%;
+    padding: 10px 10px 10px 30px;
+    border-radius: 0px;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.19);
+    transition: border-color 250ms ease-in-out;
+    font-size:14px;
+    font-weight:400;
+    color: #464646;
+    @extend .border-box;
+    &:hover, &:focus{
+      outline:none;
+      border-color: $deep_grey;
+    }
+
+    + label{
+      display:inline-block;
+      position:absolute;
+      font-size: 14px;
+      font-weight:300;
+      color: #868686;
+      left: 0px;
+      top: -20px;
+      text-shadow: 0 1px 0 rgba(19,74,70,0);
+      transition: all .3s ease-in-out;
+      transform:translateY(30px) translateX(30px);
+      z-index: -1;
+   }
+  }
+  
+  .floated:focus,.floated:active, floated:invalid{
+    text-indent:0px;
+    + label {
+    transform:translateY(7px);
+    //opacity:0.7;
+    font-size: 12px;
+    color: $brand_base;
+    }
+  }
+  
+  .floated:valid{
+    + label {
+       transform:translateY(7px);
+       //opacity:0.6;
+       font-size: 12px;
+       color: $brand_base;
+    }
+  }
+  .floated-area{
+    display:inline-block;
+    width:100%;
+    padding: 10px;
+    border-radius: 0px;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.19);
+    transition: border-color 250ms ease-in-out;
+    font-size:14px;
+    font-weight:400;
+    color: #464646;
+    resize: vertical;
+    @extend .border-box;
+    &:hover, &:focus{
+      outline:none;
+      border-color: $deep_grey;
+    }
+
+    + label{
+      display:inline-block;
+      position:absolute;
+      font-size: 14px;
+      font-weight:300;
+      color: #868686;
+      left: 0px;
+      top: -20px;
+      text-shadow: 0 1px 0 rgba(19,74,70,0);
+      transition: all .3s ease-in-out;
+      transform:translateY(30px) translateX(10px);
+      z-index: -1;
+   }
+  }
+  
+  .floated-area:focus,.floated-area:active, floated-area:invalid{
+    text-indent:0px;
+    + label {
+    transform:translateY(10px);
+    //opacity:0.7;
+    font-size: 12px;
+    color: $brand_base;
+    }
+  }
+  
+  .floated-area:valid{
+    + label {
+       transform:translateY(10px);
+       //opacity:0.6;
+       font-size: 12px;
+       color: $brand_base;
+    }
+  }
+}
+
+.tf-checked{
+  position: absolute;
+  right: 0;
+  top: 12px;
+  font-size: 18px;
+}
+
+.tf-forgot{
+  font-size: 14px;
+}
+
+.tf-userIcon{
+  top: 10px;
+  font-size: 22px;
+}
+.tf-lockIcon{
+  top: 10px;
+}
+
+.tf-loginFooter{
+  text-align: center;
+  font-size: 13px;
+}
+
+/* tf-link */
+.tf-link{
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  color: #3F51B5;
+  &:hover, &:focus{
+    text-decoration: none;
+    color: #3F51B5;
+    &:before, &:after{
+      width: 50%;
+    }
+  }
+  &:before, &:after{
+    content: '';
+    border-bottom: solid 1px #3F51B5;
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    -webkit-transition: all 0.2s ease;
+          transition: all 0.2s ease;
+  }
+  &:before{
+    left: 0;
+  }
+  &:after{
+    right: 0;
+  }
+}
+
+.alert {
+  font-size: 12px;
+  text-align: center;
+  padding: 0px 15px;
+  background: rgba(234, 0, 0, 0.08);
+  border: 1px solid #ff9c9c;
+  border-radius: 2px;
+  color: #d60000;
+  line-height: 25px;
+}

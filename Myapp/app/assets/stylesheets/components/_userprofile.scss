@@ -1,0 +1,159 @@
+
+.tf-userprofile-cover{
+  margin-top: 40px;
+  @extend .flex;
+  .tf-userprofile-img{
+    width: 225px;
+    height: 325px;
+    @extend .imgFill;
+  }
+  .tf-username-Section{
+    flex: 1;
+    margin-left: 40px;
+    position: relative;
+    .tf-userprofile-name{
+      font-size: 28px;
+      font-weight: 500;
+      color: #000;
+    }
+    .tf-userprofile-username{
+      margin: 10px 0px;
+      color: #828282;
+      font-size: 17px;
+      font-weight: 400;
+    }
+    .tf-userprofile-location{
+      color: #36ABF9;
+      font-size: 14px;
+      font-weight: 400;
+    }
+    .tf-userprofile-count{
+      margin-top: 20px;
+      ul{
+        padding: 20px 0px;
+        @extend .flex;
+        @extend .align-center;
+        li{
+          padding-right: 50px;
+          text-align: center;
+          a{
+            text-decoration: none;
+            color: #95989A;
+            font-size: 13px;
+            font-weight: 400;
+            span{
+              margin-top: 10px;
+              display: block;
+              color: $black;
+              font-size: 18px;
+              font-weight: 400;
+            }
+          }
+        }
+      }
+    }
+    .tf-userheaderimg-section{
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 210px;
+      height: 214px;
+      .tf-userheaderimg-header{
+        @extend .flex;
+        .tf-userheader-img{
+          margin-right: 2px;
+          width: 140px;
+          height: 142px;
+          @extend .imgFill;
+        }
+        .tf-userheaderimg-head{
+          .tf-userheader-img1{
+            width: 70px;
+            height: 70px;
+            @extend .imgFill;
+          }
+          .tf-userheader-img2{
+            margin-top: 2px;
+            width: 70px;
+            height: 70px;
+            @extend .imgFill;
+          }
+        }
+      }
+      .tf-userheader-img3{
+        position: relative;
+        margin-top: 2px;
+        width: 210px;
+        height: 70px;
+        @extend .imgFill;
+        .tf-user-img3before{
+          background: #000;
+          position: absolute;
+          right: 0;
+          left: 0;
+          top: 0;
+          bottom: 0;
+          opacity: 0.7;
+          p{
+            text-align: right;
+            margin-right: 10px;
+            font-size: 16px;
+            line-height: 70px;
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+}
+
+.tf-userprofile-details{
+  margin-top: 20px;
+  margin-bottom: 50px;
+  .tf-profile-header{
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 25px;
+    margin-bottom: 5px;
+    color: #000;
+    @extend .flex;
+    @extend .align-center;
+    span{
+    }
+    a{
+      margin-left: 10px;
+      color: $border_grey;
+      @include transition-ease(0.5s);
+      &:hover,&:after{
+        color: $deep_grey;
+      }
+    }
+  }
+  .tf-profile-details{  
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 25px;
+    color: #828282;
+  }
+  .tf-userprofile-about{
+    display: block; 
+  }
+}
+
+.editProfile-card{
+  input{
+    border-left: none !important;
+    border-radius: 0 !important;
+    border-right: none !important;
+    border-top: none !important;
+    background: transparent !important;
+    padding: 0 0 !important;
+  }
+  button{
+    padding: 5px 10px !important;
+  }
+}
+
+.tf-userprofile-sidebar{
+  margin-top: 20px;
+}

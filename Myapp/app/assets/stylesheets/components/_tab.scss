@@ -1,0 +1,27 @@
+.ui.segment{
+  border: none !important;
+  box-shadow: none !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+// .ui.secondary.pointing.menu .active.item {
+//   border-color: $brand_base !important;
+//   color: $brand_base !important;
+// }
+.tf-tab{
+  border-bottom: 1.5px solid #e4e4e4 !important;
+  a{
+    font-size: 14px !important;
+    &:active{
+      font-weight: 500 !important;
+    }
+  }
+}
+
+
+.trns{
+  &:before{ 
+    transform: translateX(-50%) translateY(-50%) rotate(45deg);
+  }
+}

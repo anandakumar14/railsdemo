@@ -1,0 +1,102 @@
+// _mixin.scss
+//Font
+@mixin font($size, $font-weight, $color) {
+  font-size: $size;
+  font-weight: $font-weight;
+  color: $color;
+}
+
+@mixin icon($size, $color) {
+  font-size: $size;
+  color: $color;
+}
+
+// size
+@mixin sizing($size) {
+  width: $size;
+  height: $size;
+}
+
+@mixin size($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+@mixin transition($sec) {
+  -webkit-transition: all $sec;
+     -moz-transition: all $sec;
+      -ms-transition: all $sec;
+       -o-transition: all $sec;
+          transition: all $sec;
+}
+
+@mixin transition-ease($animation) {
+  -webkit-transition: all $animation;
+     -moz-transition: all $animation;
+      -ms-transition: all $animation;
+       -o-transition: all $animation;
+          transition: all $animation;
+}
+
+// Postion value
+@mixin positionFull($value) {
+  top: $value;
+  right: $value;
+  bottom: $value;
+  left: $value;
+}
+
+@mixin positionValue($t, $r, $b, $l) {
+  top: $t;
+  right: $r;
+  bottom: $b;
+  left: $l;
+}
+
+@mixin position($pos, $value) {
+  position: $pos;
+  top: $value;
+  right: $value;
+  bottom: $value;
+  left: $value;
+}
+
+@mixin topright($pos, $top, $right) {
+  position: $pos;
+  top: $top;
+  right: $right;
+}
+@mixin bottom($pos, $bottom) {
+  position: $pos;
+  bottom: $bottom;
+}
+
+// ease
+@mixin ease($sec) {
+  -webkit-transition: transform $sec ease-in-out;
+  -moz-transition: transform $sec ease-in-out;
+  -ms-transition: transform $sec ease-in-out;
+  -o-transition: transform $sec ease-in-out;
+  transition: transform $sec ease-in-out;
+}
+
+
+@mixin rotate($deg) {
+  -ms-transform: rotate($deg); /* IE 9 */
+  -webkit-transform: rotate($deg); /* Chrome, Safari, Opera */
+  -moz-transform: rotate($deg);
+  -o-transform: rotate($deg);
+  transform: rotate($deg);
+}
+
+@mixin animateDelay($sec){
+  -webkit-animation-delay: $sec;
+     -moz-animation-delay: $sec;
+      -ms-animation-delay: $sec;
+       -o-animation-delay: $sec;
+          animation-delay: $sec;
+}
+
+
+
+

@@ -1,0 +1,109 @@
+.tf-travelcoverimg-section{
+  margin: 0px -100%;
+  .tf-travelcover-img{
+    position: relative;
+    display: block;
+    margin-top: -15px;
+    @include size(100%, 350px);
+    @extend .imgFill;
+    z-index: -1;
+    &:before{
+      content: "";
+      position: absolute;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      background: $white;
+      opacity: 0.7;
+      height: 90px;
+    }
+  }
+}
+.tf-coverdetails-section{
+  @extend .flex;
+  @extend .align-center;
+  margin-top: -90px;
+  padding: 10px 15px 0px;
+  .tf-tarvel-cover{
+    flex: 1;
+  }
+}
+
+
+.tf-traveldetails-section{
+  padding: 15px 15px 0px;
+  background-color: $white;
+}
+
+//Hotel Section
+.tf-hotel-name{
+  @include font(30px, 300, #000000);
+}
+.tf-hotel-deatils{
+  padding: 15px;
+  background-color: #ffffff;
+}
+.tf-hotelcoverdetails-section{
+  @extend .flex;
+  @extend .align-center;
+  .tf-tarvel-cover{
+    flex: 1;
+  }
+}
+
+.tf-travelcover-img{
+  display: block;
+  @include size(100%, 350px);
+  @extend .imgFill;
+}
+
+
+//Rating
+
+.tf-main-rating{
+  @extend .flex;
+  @extend .align-center;
+  .tf-rate{
+    margin: 0;
+    margin-right: 10px;
+    @include font(16px, 500, $brand_base);
+  }
+  .tf-rate-icon{
+    @include icon(19px, $brand_second);
+  }
+}
+
+.tf-main-rating1{
+  @extend .flex;
+  @extend .align-center;
+  .tf-rate{
+    margin: 0;
+    margin-right: 10px;
+    @include font(18px, 300, #ffffff);
+  }
+  .tf-rate-icon{
+    margin-top: -5px;
+    @include icon(22px, $brand_second);
+  }
+}
+
+.tf-social-icon{
+  @include font(27px, 500, #b3b3b3);
+}
+
+.tf-arrow{
+  @include icon(18px, #ccc8c8);
+}
+
+.tf-info-edit{
+  position: relative;
+  .tf-edit{
+    visibility: hidden;
+    @include topright(absolute, -35px, 25px);
+  }
+  &:hover{
+    .tf-edit{
+      visibility: visible;
+    }
+  }
+}

@@ -1,0 +1,513 @@
+// Education Cover
+.tf-classifiedCard{
+  padding: 20px;
+  background-color: $grey_tint_1;
+  border-radius: 3px;
+  height: 400px;
+  position: relative;
+  figure{
+    margin: 0;
+    .tf-eduProfile{
+      display: inline-block;
+      width: 125px;
+      height: 125px;
+      @extend .imgFill;
+    }
+  }
+  .tf-eduTitle{
+    margin-top: 0px;
+    margin-bottom: 5px;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .tf-eduMainKey{
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: $grey;
+  }
+  .tf-eduDetails{
+    li{
+      margin-bottom: 9px;
+      color: $brand-base;
+      @extend .flex;
+      @extend .align-center;
+      i{
+        width: 20px;
+        text-align: center;
+      }
+      span{
+        margin-left: 5px;
+      }
+    }
+    .color-brown{
+      color: $brown;
+    }
+    .color-blue{
+      color: $twitter;
+    }
+  }
+  .tf-eduStats{
+    margin-top: 35px;
+    margin-bottom: 0px;
+    @extend .flex;
+    @extend .align-center;
+    li{
+      text-align: center;
+      width: 30%;
+      margin: 0 5px;
+      h6{
+        font-size: 13px;
+        color: $grey;
+      }
+      span{
+        font-size: 17px;
+        color: $black;
+      }
+    }
+  }
+  .tf-eduFollow{
+    position: absolute;
+    top: 30px;
+    right: 20px;
+  }
+}
+
+//Education Cover
+.tf-education-cover{
+  .tf-educover-img{
+    width: 100%;
+    min-height: 400px;
+    @extend .imgFill;
+  }
+}
+
+//Education Personal Info
+.tf-education-info{
+  margin-bottom: 35px;
+  position: relative;
+}
+
+
+
+//Education About
+
+.tf-educationinfo-about{
+  margin-top: -30px;
+}
+
+
+//Education Main
+.tf-education-details{
+  margin-left: -30px;
+  margin-bottom: 30px;
+  padding: 0px 30px;
+}
+
+//Education Sidebar
+.tf-education-sidebar{
+  margin-top: 15px;
+  margin-left: -10px;
+  padding-left: 30px;
+  border-left: 1px solid #e3e3e3;
+}
+
+
+.tf-education-subhead{
+  font-size: 16px;
+  font-weight: 500;
+  color: #000;
+}
+
+.d-fl{
+  @extend .flex;
+  flex: 1;
+  span{
+
+  }
+}
+
+.tf-education-dec{
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 25px;
+  color: #7A7A7A;
+}
+
+.tf-userprofile-about{
+  display: block; 
+}
+
+
+
+//Course Sction
+
+.tf-education-course{
+  height: 255px;
+  padding: 20px;
+  @extend .box-shadow;
+  position: relative;
+  .tf-course-cover{
+    margin:-20px -20px 0px -20px;
+    .tf-coursecover-img{
+      min-height: 130px;
+      @extend .imgFill;
+    }
+  }
+  .tf-course-edit{
+    position: absolute;
+    top: 7px;
+    right: 0px;
+    i{
+      visibility: hidden;
+      color: #eceeef;
+      font-size: 17px;
+      padding: 10px;
+    }
+  }
+  &:hover{
+    @extend .box-shadow1;
+    .tf-course-edit{
+      i{
+        visibility: visible;
+        -webkit-transition: 2s;
+        transition: 2s;
+      }
+    }
+  }
+  .tf-course-details{
+    .tf-course-name{
+      font-size: 16px;
+      font-weight: 500;
+      margin: 10px 0px;
+      @extend .text-overflow;
+    }
+    .tf-course-dec{
+      font-size: 14px;
+      color: #A7A7A7;
+      @extend .text-overflow;
+    }
+    .tf-course-price{
+      @extend .flex;
+      .tf-quantity{
+        flex: 1;
+        font-size: 14px;
+        font-weight: 500;
+        color: $green;
+      }
+      .tf-price{
+        font-size: 14px;
+        font-weight: 500;
+        color: $nblue;
+        i{
+          padding: 0px 5px;
+          color: $nblue;
+        }
+      }
+    }
+  }
+}
+
+
+.tf-fees-type{
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0;
+  color: #adadad;
+}
+.tf-fees-price{
+  font-size: 14px;
+  font-weight: 300;
+  color: $nblue;
+}
+
+//Course Full View
+.tf-course-fullview{
+  padding: 15px;
+  position: relative;
+  .tf-course-cover{
+    @extend .flex;
+    .tf-coverimg-section{
+      margin-right: 20px;
+      .tf-course-coverimg{
+        width: 150px;
+        height: 150px;
+        @extend .imgFill;
+      }
+    }
+    .tf-course-coverdetails{
+      .tf-course-name{
+        font-size: 25px;
+        font-weight: 300;
+      }
+      .tf-course-dec{
+        margin: 10px 0px;
+        font-size: 14px;
+        font-weight: 300;
+        color: #A7A7A7;
+      }
+      .tf-course-timeing{
+        .tf-course-yr{
+          margin-left: -10px;
+          padding: 0px 10px;
+          font-size: 16px; 
+          font-size: 500;
+          color: $nblue;
+        }
+        .tf-course-time{
+          font-size: 14px; 
+          font-size: 500;
+          color: $nblue;
+        }
+      }  
+    }
+  }
+  .tf-course-details{
+    margin-top: 25px; 
+  }
+}
+
+.tf-coursemain-edit{
+  position:absolute;
+  top: 25px;
+  right: 0;
+  text-decoration: none;
+  span{
+    padding: 5px 15px;
+    border: 1px solid rgba(170, 170, 170, 0.35);
+    border-radius: 50px;
+    color: #adadad;
+    font-size: 13px;
+    i{
+      margin-right: 3px;
+      font-size: 11px;
+    }
+  }
+  &:hover{
+    transition: 1s;
+    span{
+      border: 1px solid $brand-base;
+      color: $brand-base;
+    }
+  }
+}
+
+
+
+//Course
+
+.tf-modal-dialog{
+  max-width: 800px;
+}
+//Course Sub Head
+.tf-coursedetails-header{
+  @extend .flex;
+  @extend .align-center;
+  margin: 10px 0px 15px;
+  .tf-coursedetails-sub{
+    flex: 1;
+    font-size: 25px;
+    font-weight: 300;
+    color: $black;
+    margin-bottom: 0px;
+  }
+ .tf-coursedetails-head{
+    flex: 1;
+    font-size: 20px;
+    font-weight: 300;
+    color: $black;
+  }
+  .tf-education-subhead{
+    flex: 1;
+    font-size: 16px;
+    font-weight: 500;
+    color: #000;
+  }
+  .tf-course-edit{
+    position: absolute;
+    top: 0; bottom: 0; right: 0; left: 0;
+    color: red;
+  } 
+}
+.tf-coursedetails-head{
+  font-size: 20px;
+  font-weight: 300;
+  color: $black;
+}
+.tf-coursedetail-abt{
+  font-size: 14px;
+  font-weight: 300;
+  color: #adadad;
+}
+
+.tf-alumni-section{
+  padding: 20px;
+  position: relative;
+  @extend .box-shadow;
+  .tf-alumni-cover{
+    @extend .flex;
+    .tf-alumni-img{
+      margin-right: 10px;
+      width: 70px;
+      height: 70px;
+      @extend .imgFill;
+    }
+    .tf-alumni-name{
+      h6{
+        font-size: 16px;
+        font-weight: 500;
+        margin: 10px 0px;
+        color: $brand-base;
+      }
+      p{
+        font-size: 14px;
+        font-weight: 500;
+        margin: 10px 0px;
+      }
+    }
+  }
+  .tf-alumni-details{
+    padding: 10px 0px 0px;
+    .tf-alumni-dec{
+      margin: 0;
+      font-size: 14px;
+      color: #A7A7A7;
+    }
+    .tf-alumni-year{
+      margin-top: 5px;
+      @extend .flex;
+      @extend .align-center;
+      span{
+        margin-left: -10px;
+        padding: 0px 10px;
+        font-size: 11px;
+        color: $nblue;
+      }
+    }
+  }
+  .tf-alumni-edit{
+    position: absolute;
+    top: 7px;
+    right: 0px;
+    i{
+      visibility: hidden;
+      color: #eceeef;
+      font-size: 17px;
+      padding: 10px;
+    }
+  }
+  &:hover{
+    @extend .box-shadow1;
+    .tf-alumni-edit{
+      i{
+        visibility: visible;
+        -webkit-transition: 2s;
+        transition: 2s;
+      }
+    }
+  }
+}
+
+.tf-faculty-section{
+
+  padding: 20px;
+  position: relative;
+  @extend .box-shadow;
+  .tf-faculty-cover{
+    margin: -20px -20px 0px;
+    .tf-faculty-img{
+      width: 100;
+      height: 130px;
+      @extend .imgFill;
+    }
+  }
+  .tf-faculty-name{
+    h6{
+      font-size: 16px;
+      font-weight: 500;
+      margin: 12px 0px 10px;
+      color: $brand-base;
+    }
+    p{
+      font-size: 14px;
+      font-weight: 500;
+      margin: 5px 0px;
+      color: $nblue;
+    }
+  }
+  .tf-faculty-dec{
+    margin: 0;
+    font-size: 14px;
+    color: #A7A7A7;
+    @extend .text-overflow;
+  }
+  .tf-faculty-edit{
+    position: absolute;
+    top: 7px;
+    right: 0px;
+    i{
+      visibility: hidden;
+      color: #eceeef;
+      font-size: 17px;
+      padding: 10px;
+    }
+  }
+  &:hover{
+    @extend .box-shadow1;
+    .tf-faculty-edit{
+      i{
+        visibility: visible;
+        -webkit-transition: 2s;
+        transition: 2s;
+      }
+    }
+  }
+}
+
+.tf-course-feature{
+  @extend .flex;
+  @extend .align-center;
+  .tf-feature-name{
+    flex: 1;
+    font-size: 16px;
+    font-weight: 500;
+    color: $black;
+  }
+}
+
+.tf-enquiry-section{
+  padding: 15px;
+  border: 1px solid #f3f3f3;
+  position: relative;
+  .tf-enquiry-details{
+    .tf-enquiry-name{
+      font-size: 16px;
+      font-weight: 500;
+      color: $black;
+    }
+    .tf-enquiry-subject{
+      font-size: 14px;
+      font-weight: 500;
+      color: $nblue;
+    }
+  }
+    .tf-enquiry-dec{
+      margin: 0;
+      font-size: 14px;
+      font-weight: 500;
+      color: #adadad;
+    }
+  .tf-enquiry-edit{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    visibility: hidden;
+  }
+  &:hover{
+    @extend .box-shadow;
+    .tf-enquiry-edit{
+      visibility: visible;
+    }
+  }
+}
+
+

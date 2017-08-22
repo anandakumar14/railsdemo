@@ -1,0 +1,32 @@
+
+.tf-manuf-coversection{
+  padding: 0px 15px;
+  margin: -15px -150px 0px;
+  .tf-manufcover-img{
+    position: relative;
+    display: block;
+    @include size(100%, 350px);
+    @extend .imgFill;
+    &:before{
+      content: "";
+      position: absolute;
+      @include positionFull(0);
+      background: #fff;
+      opacity: 0.1;
+    }
+  }
+  .tf-image-action{
+    @include icon(20px, #aaa);
+    @include topright(absolute, 15px, 35px);
+  }
+}
+
+.tf-manuf-coverdetails,.tf-manufacture-details{
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+.tf-manuf-coverdetails{
+  @extend .flex;
+  @extend .align-center;
+}
